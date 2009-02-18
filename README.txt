@@ -1,3 +1,6 @@
+NOTE: This script assumes that bugzilla/svn integration is done and bugs are committed with certain format
+
+
 This script scans the SVN log and creates a summery report. The report has Revision numbers, Bug IDs, Person Checked in and SVN Comments. Svn Comments have certain words marked in Bold, like merge, merging and 5 digit numbers.
 
 How to use
@@ -9,11 +12,11 @@ Running
 svnchgreport.rb "svn log command" outputfile
 
 example:
-svnchgreport.rb "svn log -r18911:18920 http://svn.valista.com/project/verizon/vasip/branches/2.1_02_stabilization" outputfile.html
+svnchgreport.rb "svn log -r18911:18920 svn_url" outputfile.html
 
 Output
 ------
-svn_history.html or the given outputfile name will have the summery
+svn_history.html or the given outputfile name will have the summary
 
 Change Log
 ----------
