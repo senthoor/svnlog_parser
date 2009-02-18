@@ -1,0 +1,108 @@
+------------------------------------------------------------------------
+r28323 | psenthoor | 2007-07-31 13:13:35 +0600 (Tue, 31 Jul 2007) | 2 lines
+
+merging the settlement xsd from production to stabilization branch the change is <xs:enumeration value="ACH"/>
+
+------------------------------------------------------------------------
+r28351 | chaturag | 2007-07-31 16:19:47 +0600 (Tue, 31 Jul 2007) | 11 lines
+
+Merge revisions 28058:28069 from trunk
+Comment from trunk:
+(1)Fixed bug 19685. Removed the hardcoded database parameters from the script
+(2)Fixed bug 18229 inorder to log an event when updating billDay for the purpose of audit
+(3)Fix for the bug 20442
+- Now there is an option to go the previous page in " Create Verizon Telephone Account" page
+(4)Fix for the bug 19760
+- In MAT "Change Payment Instrument" option will displays "Associate with my Verizon Telephone bill" message instead
+of "include with verizon bill"
+
+
+------------------------------------------------------------------------
+r28353 | chaturag | 2007-07-31 16:36:56 +0600 (Tue, 31 Jul 2007) | 6 lines
+
+Merged revision 28096 from trunk
+
+Comment from trunk checking:
+fixing bug 20680 by removing one commit and having only one global commit for the billing report
+
+
+------------------------------------------------------------------------
+r28354 | chaturag | 2007-07-31 16:39:56 +0600 (Tue, 31 Jul 2007) | 6 lines
+
+Merged revision 28099 from trunk
+
+Comment from trunk check-in:
+Fixed bug 20812 inorder to validate user profile properties
+
+
+------------------------------------------------------------------------
+r28356 | chaturag | 2007-07-31 16:55:33 +0600 (Tue, 31 Jul 2007) | 5 lines
+
+Merged revisions 28117:28145 from trunk
+Svn comment in trunk:
+Fix for bug 20762. Cancellation fee is charged from pre-terminated accounts
+
+
+------------------------------------------------------------------------
+r28358 | chaturag | 2007-07-31 17:10:07 +0600 (Tue, 31 Jul 2007) | 9 lines
+
+Merged revision 28149:28168 from trunk
+svn comment in trunk:
+(1)fixing bug 19166, now the scripts exit as soon as they encounter an error. the settlement script has commits but the commits are for temp table... it should
+roll back the changes for main settlement related table if it encounters an error
+(2)Fix for the bug 20935
+-entered data will be retained in the quantity field of review Order page even if you continue and come back to it again
+(3)These classes also need to be updated with fix for bug 20762. This should solve the test failures as well
+
+
+------------------------------------------------------------------------
+r28359 | chaturag | 2007-07-31 17:19:36 +0600 (Tue, 31 Jul 2007) | 3 lines
+
+Merged revision 28203:28207 from trunk
+
+
+------------------------------------------------------------------------
+r28363 | chaturag | 2007-07-31 18:07:27 +0600 (Tue, 31 Jul 2007) | 1 line
+
+Merged revision 28214:28349 from trunk
+------------------------------------------------------------------------
+r28409 | chaturag | 2007-08-01 13:15:37 +0600 (Wed, 01 Aug 2007) | 6 lines
+
+Merged revisions 28352:28404 from trunk
+
+Merged bug fixes:
+Bug 21120 20725 17772
+
+
+------------------------------------------------------------------------
+r28553 | wherath | 2007-08-02 16:42:46 +0600 (Thu, 02 Aug 2007) | 1 line
+
+ Adding patch build.xml changes for 3.6_01 rc2 release 
+------------------------------------------------------------------------
+r28616 | wherath | 2007-08-03 09:35:37 +0600 (Fri, 03 Aug 2007) | 1 line
+
+ Adding 20725 fix patch scripts to patches build.xml
+------------------------------------------------------------------------
+r28618 | wherath | 2007-08-03 10:40:29 +0600 (Fri, 03 Aug 2007) | 3 lines
+
+- Merged revisions 28616:28617 from trunk
+- Merged bug fixes: Bug  20725(This is a partial checkin -  Adding a script to drop the backup table)
+
+------------------------------------------------------------------------
+r28619 | wherath | 2007-08-03 10:46:52 +0600 (Fri, 03 Aug 2007) | 3 lines
+
+- Adding patch_3.6_01_20725_drop_vz_tos_content_backup.dml to 3.6_01 patch build.xml
+
+
+------------------------------------------------------------------------
+r28621 | psenthoor | 2007-08-03 11:20:56 +0600 (Fri, 03 Aug 2007) | 3 lines
+
+fixing bug 21338
+fix note: now VAS-P journal has amounts with tax and VAS-B journal get the amount without tax since tax is a separate account for VAS-B.
+
+------------------------------------------------------------------------
+r28680 | psenthoor | 2007-08-06 09:59:12 +0600 (Mon, 06 Aug 2007) | 2 lines
+
+fixing bug 21336, adding accessType="DIAL" to settlement.xsd
+
+------------------------------------------------------------------------
