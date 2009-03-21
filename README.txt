@@ -1,5 +1,9 @@
-NOTE: This script assumes that bugzilla/svn integration is done and bugs are committed with certain format
+NOTE: This script assumes that bugzilla/svn integration is done and bugs are committed with certain format 
 
+Format
+
+B[b]ug XXXX
+where XXXX is bug number
 
 This script scans the SVN log and creates a summery report. The report has Revision numbers, Bug IDs, Person Checked in and SVN Comments. Svn Comments have certain words marked in Bold, like merge, merging and 5 digit numbers.
 
